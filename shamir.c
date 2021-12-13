@@ -115,7 +115,7 @@ void init_output_files(){
 		output_files[i] = fopen(output_file_name, "wb");
 		if(!output_files[i]){
 			for(j = 0; j < i; j++){
-				fclose(output_files[i]);
+				fclose(output_files[j]);
 			}
 			free(input_data);
 			fprintf(stderr, "Error: Cannot open file '%s' for output.\n", output_file_name);
@@ -136,7 +136,7 @@ void init_input_files(){
 		input_files[i] = fopen(input_file_names[i], "rb");
 		if(!input_files[i]){
 			for(j = 0; j < i; j++){
-				fclose(input_files[i]);
+				fclose(input_files[j]);
 			}
 			fprintf(stderr, "Error: Cannot open file '%s' for reading.\n", input_file_names[i]);
 			exit(1);
