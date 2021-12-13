@@ -1,6 +1,7 @@
 # Shamir Secret Sharing
 An implementation of Shamir's secret sharing scheme. Splits a file into several pieces of the same size with a specified number of pieces required to recover the file.
-
+## Note ##
+Do not use this for any sensitive data because there may be vulnerabilities that I am not aware of. This project was only made for fun.
 ## Command line options ##
 Option   | Function
 -------- |---------
