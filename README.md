@@ -1,2 +1,12 @@
-# shamir_secret_sharing
-An implementation of Shamir's secret sharing scheme
+# Shamir Secret Sharing
+An implementation of Shamir's secret sharing scheme. Splits a file into several pieces of the same size with a specified number of pieces required to recover the file.
+
+## Command line options ##
+Option   | Function
+-------- |---------
+-r       |Read given shares and output the secret
+-w       |Read given secret and output shares
+-s [num] |When -w specified, gives the number of shares to write
+-n [num] |When -w specified, gives the number of shares required to recover the secret
+[file]   |When -w specified, gives the file to be split into shares. When -r specified, gives as input a share to read
+-o [file]|When -r specified, gives the file name of the output
